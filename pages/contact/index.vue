@@ -2,6 +2,7 @@
   <div class="container col-lg-8 col-xl-7 mt-5">
     <div class="text-center">
       <h1>Contact Me</h1>
+      <div class="divider col-1"></div>
       <h6>Thank you for deciding to contact me. Please fill out the form below and I will get back to you at the entered
         email address as soon as I can</h6>
     </div>
@@ -77,4 +78,8 @@
     }
 
   }
+
+  useHead({
+    title: 'Bryson Frost | Contact'
+  })
 </script>

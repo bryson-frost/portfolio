@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     }
   },
   css: ['@/assets/main.css'],
-  modules: ['nuxt-icon', '@nuxt/content', '@nuxtjs/turnstile', ['nuxt-mail', {
+  modules: ['nuxt-icon', '@nuxtjs/turnstile', ['nuxt-mail', {
     message: {
       to: process.env.EMAIL_RECEIVER,
     },
@@ -39,12 +39,5 @@ export default defineNuxtConfig({
   turnstile: {
     siteKey: process.env.SITE_KEY,
     addValidateEndpoint: true
-  },
-
-  content: {
-    highlight: {
-      theme: 'nord',
-      preload: ['ts', 'js', 'css', 'java', 'json', 'bash', 'vue']
-    }
   }
 })

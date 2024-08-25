@@ -8,7 +8,7 @@
           <h6 class="text-center"><NuxtLink to="/disclaimer" class="text-primary text-decoration-none">Disclaimer</NuxtLink></h6>
         </div>
         <div class="col mb-2 mb-xs-0 d-none d-sm-block">
-          <NuxtLink to="https://github.com/BrysonFrost" target="_blank">
+          <NuxtLink to="https://github.com/bryson-frost" target="_blank">
             <Icon name="mdi:github" width="1.8em" height="1.8em" color="white" />
           </NuxtLink>
           <NuxtLink to="https://www.linkedin.com/in/brysonfrost/" target="_blank">
