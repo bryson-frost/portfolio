@@ -174,7 +174,13 @@ nav {
 
 .tools-box {
   border: 2px dotted #4f95c6;
-  border-radius: 15px;
+  border-radius: 8px;
+}
+
+.about-image {
+  border-radius: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 

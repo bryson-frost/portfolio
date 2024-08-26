@@ -20,7 +20,7 @@ useHead({
             <div class="col-3">
               <img class="img-fluid" :src="project.headimage" />
             </div>
-            <div class="flex-fill mx-1">
+            <div class="flex-fill ms-3">
               <h5 class="m-0">{{ project.name }}</h5>
               <p class="text-nowrap m-0">
                 <a :href="project.link" target="_blank" class="card-link">{{ project.linkshort }}
@@ -30,7 +30,7 @@ useHead({
               <p class="card-time"><small>1 Year Ago</small></p>
             </div>
             <div class="col-3">
-              <div class="tools-box p-1">
+              <div class="tools-box">
                 <Icon v-for="tool in project.toolList" :key="tool" :name="tool" class="col-4"></Icon>
               </div>
             </div>
@@ -39,13 +39,13 @@ useHead({
             <p>{{ project.description }}</p>
           </div>
           <div class="row d-flex justify-content-center mt-auto">
-            <div class="col-5">
+            <div class="col-4">
               <a class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap">
                 <Icon name="ion:images-outline" class="icon-size"></Icon>
                 <span class="ms-1">Gallery</span>
               </a>
             </div>
-            <div class="col-3 mb-2">
+            <div class="col-4 mb-2">
               <a class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap" :href="project.link" target="_blank">
                 <Icon name="ph:link-simple-bold" class="icon-size"></Icon>
                 <span class="ms-1">Link</span>

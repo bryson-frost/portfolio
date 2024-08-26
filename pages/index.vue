@@ -26,13 +26,18 @@ useHead({
       <div class="container mt-5">
         <h2 class="text-center">About Me</h2>
         <div class="divider"></div>
-        <div class="container text-center">
-          <h6 class="mb-5">My schedule is currently open for freelance website development projects. I specialize
-            in
-            creating tailored
-            websites for clients and am available to discuss any inquiries. Feel free to reach out via the contact form
-            on
-            this website if you have any questions or would like to discuss your project further.</h6>
+        <div class="mt-3">
+          <img src="/img/profilepicture-zoom.jpg" class="about-image mx-auto d-block mb-4" />
+          <div class="d-block mx-auto col-10 col-lg-8">
+            <div class="text-center mb-5">
+              <p>I am a software engineer with a passion for full-stack development. I graduated from Weber State
+                University with a Bachelor's Degree in Computer Science and a certificate in Game Development. I aspire
+                to create engaging and unforgettable experiences for users.
+              I am actively seeking job opportunities that align with my skills and experience. If you have a position that matches my qualifications, please fill out the form on my contact page so that we can get in touch. You can also get in contact with me via LinkedIn.</p>
+            </div>
+
+          </div>
+
         </div>
 
       </div>

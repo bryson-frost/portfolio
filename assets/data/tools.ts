@@ -3,5 +3,14 @@ export const tools = {
     'CSS3': 'devicon:css3', 
     'JavaScript': 'devicon:javascript',
     'Bootstrap': 'devicon:bootstrap', 
-    'jQuery': 'devicon:jquery'
+    'jQuery': 'devicon:jquery',
+    '.NET': 'devicon:dotnetcore',
+    'C#': 'devicon:csharp',
+    'MySQL': 'devicon:mysql',
+    'Cloudflare': 'devicon:cloudflare',
+    'GitHubPages': 'skill-icons:github-dark',
+    'IdentityFramework': 'material-symbols:identity-platform',
+    'PostgreSQL': 'devicon:postgresql',
+    'Django': 'skill-icons:django',
+    'Heroku': 'devicon:heroku',
 }

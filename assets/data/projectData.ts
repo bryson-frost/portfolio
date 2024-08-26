@@ -13,31 +13,31 @@ export const projects = [
         tools['CSS3'],
         tools['JavaScript'],
         tools['Bootstrap'],
-        tools['jQuery']
+        tools['jQuery'],
+        tools['GitHubPages']
       ]
     },
     {
       _id: '2',
       name: 'Cheaper Buy The Dozen',
       description: 'This is a test to see if vargo hunting is properly displayed',
-      headimage: '/img/vargohuntinglogo.png',
+      headimage: '/img/CBTD.png',
       github: 'None',
       link: 'https://vargohunting.com/',
       linkshort: 'vargohunting.com',
       toolList: [
-        tools['HTML5'],
-        tools['JavaScript'],
+        tools['.NET'],
+        tools['C#'],
+        tools['MySQL'],
         tools['Bootstrap'],
-        tools['jQuery'],
-        tools['HTML5'],
-        tools['CSS3']
+        tools['IdentityFramework']
       ]
     },
     {
         _id: '3',
-        name: 'Cheaper Buy The Dozen',
+        name: 'Sports Store',
         description: 'This is a test to see if vargo hunting is properly displayed',
-        headimage: '/img/vargohuntinglogo.png',
+        headimage: '/img/sportsstore.png',
         github: 'None',
         link: 'https://vargohunting.com/',
         linkshort: 'vargohunting.com',
@@ -52,7 +52,7 @@ export const projects = [
       },
       {
         _id: '4',
-        name: 'Cheaper Buy The Dozen',
+        name: 'Gallery',
         description: 'This is a test to see if vargo hunting is properly displayed',
         headimage: '/img/vargohuntinglogo.png',
         github: 'None',
