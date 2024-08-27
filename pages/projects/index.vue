@@ -1,9 +1,12 @@
-<script setup>
+<script setup lang="ts">
 import { projects } from '@/assets/data/projectData';
+import { tools } from '@/assets/data/tools';
+
+type ToolKey = keyof typeof tools;
 
 useHead({
-  title: 'Bryson Frost | Projects'
-})
+  title: 'Bryson Frost | Projects',
+});
 </script>
 
 <template>
@@ -18,10 +21,10 @@ useHead({
         <div class="card p-3 h-100">
           <div class="card-head d-flex">
             <div class="col-3">
-              <img class="img-fluid" :src="project.headimage" />
+              <img class="img-fluid project-head-img" :src="project.headimage" />
             </div>
             <div class="flex-fill ms-3">
-              <h5 class="m-0">{{ project.name }}</h5>
+              <h5 class="me-3">{{ project.name }}</h5>
               <p class="text-nowrap m-0">
                 <a :href="project.link" target="_blank" class="card-link">{{ project.linkshort }}
                   <Icon name="ph:link-simple-bold" />
@@ -30,8 +33,11 @@ useHead({
               <p class="card-time"><small>1 Year Ago</small></p>
             </div>
             <div class="col-3">
-              <div class="tools-box">
-                <Icon v-for="tool in project.toolList" :key="tool" :name="tool" class="col-4"></Icon>
+              <div class="tools-box row">
+                <div v-for="tool in project.toolList" :key="tool" class="col-4 tool">
+                  <Icon :name="tools[tool as ToolKey]" class="tool-icon"></Icon>
+                  <div class="tool-name">{{ tool }}</div>
+                </div>
               </div>
             </div>
           </div>
@@ -41,23 +47,23 @@ useHead({
           <div class="row d-flex justify-content-center mt-auto">
             <div class="col-4">
               <a class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap">
-                <Icon name="ion:images-outline" class="icon-size"></Icon>
+                <Icon name="ph:images-light" class="icon-size"></Icon>
                 <span class="ms-1">Gallery</span>
               </a>
             </div>
             <div class="col-4 mb-2">
               <a class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap" :href="project.link" target="_blank">
-                <Icon name="ph:link-simple-bold" class="icon-size"></Icon>
-                <span class="ms-1">Link</span>
+                <Icon name="ph:link-simple" class="icon-size"></Icon>
+                <span class="ms-1">Site Link</span>
               </a>
             </div>
             <div class="col-4">
               <a v-if="project.github == 'None'" class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap disabled">
-                <Icon name="uil:github-alt" class="icon-size"></Icon>
+                <Icon name="uil:github" class="icon-size"></Icon>
                 <span class="ms-1">Private</span>
               </a>
               <a v-else class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap">
-                <Icon name="uil:github-alt" class="icon-size"></Icon>
+                <Icon name="uil:github" class="icon-size"></Icon>
                 <span class="ms-1">Github</span>
               </a>
             </div>

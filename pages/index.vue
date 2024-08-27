@@ -1,6 +1,10 @@
 <script setup>
+import { skills } from '@/assets/data/projectData';
+import { tools } from '@/assets/data/tools'
+
 useHead({
   title: 'Bryson Frost | Software Engineer'
+  
 })
 </script>
 
@@ -30,21 +34,37 @@ useHead({
           <img src="/img/profilepicture-zoom.jpg" class="about-image mx-auto d-block mb-4" />
           <div class="d-block mx-auto col-10 col-lg-8">
             <div class="text-center mb-5">
-              <p>I am a software engineer with a passion for full-stack development. I graduated from Weber State
-                University with a Bachelor's Degree in Computer Science and a certificate in Game Development. I aspire
+              <p>I am a software engineer with a passion for full-stack development. I graduated from <NuxtLink
+                  to="https://www.weber.edu/" target="_blank">Weber State
+                  University</NuxtLink> with a Bachelor's Degree in <NuxtLink
+                  to="https://catalog.weber.edu/preview_program.php?catoid=23&poid=11500&returnto=8638" target="_blank">
+                  Computer Science</NuxtLink> and a certificate in <span class="poppins-medium">Game Development.</span>
+                I aspire
                 to create engaging and unforgettable experiences for users.
-              I am actively seeking job opportunities that align with my skills and experience. If you have a position that matches my qualifications, please fill out the form on my contact page so that we can get in touch. You can also get in contact with me via LinkedIn.</p>
+                I am actively seeking job opportunities that align with my skills and experience. If you have a position
+                that matches my qualifications, please fill out the form on my <NuxtLink to="/contact">contact
+                </NuxtLink> page so that we can get in touch.
+                You can also get in contact with me via <NuxtLink to="https://www.linkedin.com/in/brysonfrost/"
+                  target="_blank">LinkedIn.</NuxtLink>
+              </p>
             </div>
-
           </div>
-
         </div>
-
       </div>
       <div class="container mb-5">
         <div class="container">
           <h2 class="text-center mb-5">Technical Skills</h2>
-          <Skills />
+          <div class="container">
+            <div class="row mb-4">
+              <div v-for="skill in skills"
+                class="col-4 col-sm-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="skill-icon">
+                  <Icon :name="tools[skill]" />
+                </div>
+                <span class="mb-4">{{ skill }}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container">
