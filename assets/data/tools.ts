@@ -8,8 +8,9 @@ export const tools = {
     'C#': 'devicon:csharp',
     'MySQL': 'devicon:mysql',
     'Cloudflare': 'devicon:cloudflare',
-    'GitHubPages': 'skill-icons:github-dark',
-    'IdentityFramework': 'material-symbols:identity-platform',
+    'GitHub Pages': 'skill-icons:github-dark',
+    'Identity Framework': 'material-symbols:identity-platform',
+    'Entity Framework': 'material-symbols:identity-platform',
     'PostgreSQL': 'devicon:postgresql',
     'Django': 'devicon-plain:django',
     'Heroku': 'devicon:heroku',
@@ -24,7 +25,8 @@ export const tools = {
     'Linux': 'devicon:linux',
     'Bash': 'devicon:bash',
     'Tailwind CSS': 'devicon:tailwindcss',
-    'Python': 'devicon:python'
+    'Python': 'devicon:python',
+    'Stripe': 'bi:stripe'
 
 
 

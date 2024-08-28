@@ -5,7 +5,7 @@ import { tools } from '@/assets/data/tools'
 useHead({
   title: 'Bryson Frost | Software Engineer'
   
-})
+});
 </script>
 
 <template>
@@ -42,8 +42,7 @@ useHead({
                 I aspire
                 to create engaging and unforgettable experiences for users.
                 I am actively seeking job opportunities that align with my skills and experience. If you have a position
-                that matches my qualifications, please fill out the form on my <NuxtLink to="/contact">contact
-                </NuxtLink> page so that we can get in touch.
+                that matches my qualifications, please fill out the form on my <NuxtLink to="/contact">contact</NuxtLink> page so that we can get in touch.
                 You can also get in contact with me via <NuxtLink to="https://www.linkedin.com/in/brysonfrost/"
                   target="_blank">LinkedIn.</NuxtLink>
               </p>

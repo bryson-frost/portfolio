@@ -4,7 +4,7 @@
       <h1>Contact Me</h1>
       <div class="divider col-1"></div>
       <h6>Thank you for deciding to contact me. Please fill out the form below and I will get back to you at the entered
-        email address as soon as I can</h6>
+        email address as soon as I can.</h6>
     </div>
 
     <form @submit.prevent="sendEmail">
