@@ -43,8 +43,8 @@ useHead({
     <h1 class="mt-5 text-center">My Projects</h1>
     <div class="divider"></div>
     <div class="text-center mb-3">
-      The code for this website is also public on GitHub. You can view it <a
-        href="https://github.com/bryson-frost/portfolio" target="_blank">here.</a>
+      <p>The code for this website is also public on GitHub. You can view it <a
+        href="https://github.com/bryson-frost/portfolio" target="_blank">here.</a></p>
     </div>
     <div id="project-list" class="row">
       <div v-for="project in projects" :key="project.id" class="col-12 col-md-6 col-xl-4 mb-4 mx-auto mx-lg-0">
@@ -72,7 +72,7 @@ useHead({
               </div>
             </div>
           </div>
-          <div class="card-main mt-3">
+          <div class="card-main mt-auto">
             <p>{{ project.description }}</p>
           </div>
           <div class="row d-flex justify-content-center mt-auto">
@@ -96,7 +96,7 @@ useHead({
                 <Icon name="uil:github" class="icon-size"></Icon>
                 <span class="ms-1">Private</span>
               </a>
-              <a v-else
+              <a v-else :href="project.github" target="_blank"
                 class="btn btn-main btn-card text-center d-flex align-items-center justify-content-center text-nowrap">
                 <Icon name="uil:github" class="icon-size"></Icon>
                 <span class="ms-1">Github</span>
@@ -169,6 +169,10 @@ useHead({
   height: fit-content;
   margin-top: 20px;
   max-width: 800px;
+}
+
+.card-link {
+  font-size: .7rem;
 }
 
 .gallery-thumbnails {

@@ -4,7 +4,7 @@ import { tools } from '@/assets/data/tools'
 
 useHead({
   title: 'Bryson Frost | Software Engineer'
-  
+
 });
 </script>
 
@@ -30,10 +30,10 @@ useHead({
       <div class="container mt-5">
         <h2 class="text-center">About Me</h2>
         <div class="divider"></div>
-        <div class="mt-3">
+        <div class="mt-3 mb-5">
           <img src="/img/profilepicture-zoom.jpg" class="about-image mx-auto d-block mb-4" />
           <div class="d-block mx-auto col-10 col-lg-8">
-            <div class="text-center mb-5">
+            <div class="text-center mb-4">
               <p>I am a software engineer with a passion for full-stack development. I graduated from <NuxtLink
                   to="https://www.weber.edu/" target="_blank">Weber State
                   University</NuxtLink> with a Bachelor's Degree in <NuxtLink
@@ -42,13 +42,25 @@ useHead({
                 I aspire
                 to create engaging and unforgettable experiences for users.
                 I am actively seeking job opportunities that align with my skills and experience. If you have a position
-                that matches my qualifications, please fill out the form on my <NuxtLink to="/contact">contact</NuxtLink> page so that we can get in touch.
+                that matches my qualifications, please fill out the form on my <NuxtLink to="/contact">contact
+                </NuxtLink> page so that we can get in touch.
                 You can also get in contact with me via <NuxtLink to="https://www.linkedin.com/in/brysonfrost/"
                   target="_blank">LinkedIn.</NuxtLink>
               </p>
             </div>
+            <div class="text-center">
+              <h5>You can download my resume <a href="/BrysonFrostResume2024.pdf" target="_blank">here.</a></h5>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="container text-center">
+        <h2 class="mb-3">Certifications</h2>
+        <h4>Weber State University</h4>
+        <ul class="mb-5 certification-list">
+          <li>Certificate of Proficiency in Programming Essentials - April 2023</li>
+          <li>Certificate of Proficiency in Game Development - April 2024</li>
+        </ul>
       </div>
       <div class="container mb-5">
         <div class="container">
@@ -60,21 +72,23 @@ useHead({
                 <div class="skill-icon">
                   <Icon :name="tools[skill]" />
                 </div>
-                <span class="mb-4">{{ skill }}</span>
+                <span class="mb-4 mt-1 skill-name poppins-light">{{ skill }}</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <h2 class="text-center mb-3">Certifications</h2>
-        <h4>Weber State University</h4>
-        <ul class="mb-5">
-          <li>Certificate of Proficiency in Programming Essentials - April 2023</li>
-          <li>Certificate of Proficiency in Game Development - April 2024</li>
-        </ul>
-      </div>
     </div>
   </div>
 
 </template>
+
+<style scoped>
+.skill-name {
+  font-size: .8rem;
+}
+
+.certification-list {
+  list-style-type: none;
+}
+</style>

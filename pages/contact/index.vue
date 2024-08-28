@@ -28,12 +28,12 @@
             <textarea class="form-control" name="message" v-model="message" rows="6" placeholder="Your Message :" required></textarea>
           </div>
         </div>
-        <div class="d-flex flex-row-reverse">
-          <button type="submit" class="btn btn-primary" ref="sendMessage">Send Message</button>
+        <div class="mb-5 d-flex flex-row-reverse">
+          <button type="submit" class="btn btn-main " ref="sendMessage">Send Message</button>
         </div>
         <pre class="d-none">{{ response }}</pre>
       </div>
-      <NuxtTurnstile v-model="token" class="w-50"/>
+      <NuxtTurnstile v-model="token" class="mb-5"/>
     </form>
   </div>
   
